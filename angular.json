@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-challange-one"
+    }
+  },
+  "defaultProject": "angular-challange-one",
+  "cli": {
+    "analytics": false
+  }
 }
