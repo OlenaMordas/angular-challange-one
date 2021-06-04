@@ -1,0 +1,19 @@
+@import '../../../styles';
+
+.card-container{
+    @include box-shadow();
+    border-radius: 3px;
+    .card-header{
+        padding: 10px;
+        color: $white;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: auto auto 1fr;
+        align-items: center;
+        background-color: $green;
+    }
+   .body, .footer{
+       padding: 10px;
+   }
+
+}

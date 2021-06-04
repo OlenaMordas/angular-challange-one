@@ -1,0 +1,14 @@
+<div class="card-container">
+    <div class="card-header">
+        <i *ngIf="iconClasses" class={{iconClasses}}></i>
+        <h4>{{title}}</h4>
+        <h5>{{subTitle}}</h5>
+    </div>
+    <div class="body">
+        <ng-content select=".body"></ng-content>
+    </div>
+   <div class="footer">
+        <ng-content select=".footer"></ng-content>
+   </div>
+   
+</div>
