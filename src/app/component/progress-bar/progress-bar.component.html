@@ -1,0 +1,12 @@
+<div class="progress-bar-container">
+    <div class="header">
+        <h4>{{title}}</h4>
+        <h5>{{subTitle}}</h5>
+    </div>
+    <div class="body">
+        <progress [value]="this.start" [max]="stop" class="bar" #progress></progress>
+        <small>{{progress.value}}%</small>
+        <button (click)="onClick(progress)">Update</button>
+    </div>
+</div>
+

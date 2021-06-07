@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { ToolbarComponent } from './component/toolbar/toolbar.component';
 import { CardComponent } from './component/card/card.component';
 import { AccordionComponent } from './component/accordion/accordion.component';
+import { ProgressBarComponent } from './component/progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     CardComponent,
-    AccordionComponent
+    AccordionComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule

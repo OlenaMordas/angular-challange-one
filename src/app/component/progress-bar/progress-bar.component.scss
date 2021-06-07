@@ -1,0 +1,45 @@
+@import '../../../styles';
+
+.progress-bar-container{
+    @include box-shadow();
+    display: grid;
+    align-items: center;
+    position: relative;
+    .header{
+        padding: 10px;
+        color: $white;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        background-color: $green;
+    }
+    .body{
+        @include box-shadow();
+        padding: 10px;
+        progress{
+            height: 20px;
+            width:100%;
+            background-color:white;
+            transition: all 1s;
+        }
+        progress[value]::-webkit-progress-value{
+            transition:  all 3s;
+            background-color: $blue;
+        }
+        progress[value]::-webkit-progress-value,
+        progress[value]::-webkit-progress-bar{
+            border-radius: 20px;
+        }
+        small{
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            color:white;
+        }
+        button{
+            margin: 10px;
+        }
+    }
+    
+}
