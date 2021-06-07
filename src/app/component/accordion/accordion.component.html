@@ -1,0 +1,17 @@
+<div class="accordion-container">
+    <div class="header">
+        <h4>{{title}}</h4>
+        <h5>{{subTitle}}</h5>
+    </div>
+    <div class="body">
+        <ul>
+            <li *ngFor="let item of items" [class.open]="item.open" >
+                <div class="item-header" (click)="onClick(item)">
+                    <h4>{{item.title}}</h4>
+                    <i [class]="item.isExpanded ? 'fas fa-chevron-up' : 'fas fa-chevron-down'"></i>
+                </div>
+                <div class="content" [hidden]="!item.isExpanded"> {{item.content}}</div>
+            </li>
+        </ul>
+    </div>
+</div>

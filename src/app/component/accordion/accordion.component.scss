@@ -1,0 +1,34 @@
+@import '../../../styles';
+
+.accordion-container{
+    @include box-shadow();
+    border-radius: 3px;
+    .header{
+        padding: 10px;
+        color: $white;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        background-color: $green;
+    }
+    .body{
+        @include box-shadow();
+        border-radius: 3px solid rgb(221, 221, 221);
+        grid-template-columns: auto 1fr;
+        .item-header{
+            padding: 10px;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 1fr auto;
+            i{
+                color: $blue;
+                transition: all 0.3s;
+            }
+        }
+        .content{
+            padding: 10px;
+        }
+    }
+    
+}
