@@ -1,0 +1,12 @@
+<div class="star-rating-container">
+    <div class="header">
+        <h4>{{title}}</h4>
+        <h5>{{subTitle}}</h5>
+    </div>
+    <div class="body">  
+        <i class="fas fa-star" *ngFor="let star of fullStars"></i>
+        <i class="fas fa-star-half-alt" *ngIf="hasHalfStar"></i>
+        <i class="far fa-star" *ngFor="let star of emptyStars"></i>
+    </div>
+</div>
+

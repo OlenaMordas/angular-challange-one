@@ -1,0 +1,14 @@
+@import '../../../styles';
+
+i {
+    color: #e5e510;
+}
+.header{
+    padding: 10px;
+    color: $white;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background-color: $green;
+}
