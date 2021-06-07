@@ -19,7 +19,7 @@ export class AccordionComponent {
   public items: AccrodionItem[] = [];
 
   onClick(item:AccrodionItem){
-    item.isExpanded = !item.isExpanded;
+    item.isExpanded = !item.isExpanded; 
   }
 
 }
