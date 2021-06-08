@@ -24,9 +24,7 @@ import { DirectiveDocsComponent } from './directives/directive-docs/directive-do
     ProgressBarComponent,
     StarRatingComponent,
     PageTopComponent,
-    ComponentDocsComponent,
-    ServiceDocsComponent,
-    DirectiveDocsComponent
+    ComponentDocsComponent
   ],
   imports: [
     BrowserModule,
