@@ -11,6 +11,9 @@ import { PageTopComponent } from './component/page-top/page-top.component';
 import { RouterModule } from '@angular/router';
 import { APP_ROUTES } from 'src/app.routes';
 import { ComponentDocsComponent } from './component/component-docs/component-docs.component';
+import { PipeDocsComponent } from './pipes/pipe-docs/pipe-docs.component';
+import { ServiceDocsComponent } from './services/service-docs/service-docs.component';
+import { DirectiveDocsComponent } from './directives/directive-docs/directive-docs.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { ComponentDocsComponent } from './component/component-docs/component-doc
     ProgressBarComponent,
     StarRatingComponent,
     PageTopComponent,
-    ComponentDocsComponent
+    ComponentDocsComponent,
+    PipeDocsComponent,
+    ServiceDocsComponent,
+    DirectiveDocsComponent
   ],
   imports: [
     BrowserModule,
