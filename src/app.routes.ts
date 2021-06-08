@@ -8,5 +8,5 @@ export const APP_ROUTES: Routes = [
     {path: '', component: ComponentDocsComponent},
     {path: 'services', component: ServiceDocsComponent},
     {path: 'directives', component: DirectiveDocsComponent},
-    {path: 'pipes', component: PipeDocsComponent}
+    {path: 'pipes', loadChildren: () =>import('./app/pipes/pipes.module').then((m) => m.PipesModule)}
 ];

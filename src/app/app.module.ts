@@ -25,7 +25,6 @@ import { DirectiveDocsComponent } from './directives/directive-docs/directive-do
     StarRatingComponent,
     PageTopComponent,
     ComponentDocsComponent,
-    PipeDocsComponent,
     ServiceDocsComponent,
     DirectiveDocsComponent
   ],
