@@ -7,6 +7,7 @@ import { StarRatingComponent } from './star-rating/star-rating.component';
 import { ComponentDocsComponent } from './component-docs/component-docs.component';
 import { COMPONENT_ROUTES } from './component.routes';
 import { RouterModule } from '@angular/router';
+import { LoaderComponent } from './loader/loader.component';
 
 
 
@@ -16,7 +17,8 @@ import { RouterModule } from '@angular/router';
     AccordionComponent,
     ProgressBarComponent,
     StarRatingComponent,
-    ComponentDocsComponent
+    ComponentDocsComponent,
+    LoaderComponent
   ],
   imports: [
     CommonModule,
