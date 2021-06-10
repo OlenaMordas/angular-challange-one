@@ -20,3 +20,12 @@
     rating=3.5>
 </star-rating>
 <app-loader [isLoading] = false></app-loader>
+
+<card title="Credit Card" subTitle="Component" iconClasses = "fas fa-info-circle">
+    <div class="body">
+        <credit-card [creditCardNumber]="'432143214321'" [isReadonly] = "false"></credit-card>
+        <br>
+        <credit-card [creditCardNumber]="'432143214321'" [isReadonly] = "true"></credit-card>
+    </div>
+    <div class="footer">Footer Content</div>
+</card>

@@ -8,6 +8,9 @@ import { ComponentDocsComponent } from './component-docs/component-docs.componen
 import { COMPONENT_ROUTES } from './component.routes';
 import { RouterModule } from '@angular/router';
 import { LoaderComponent } from './loader/loader.component';
+import { CreditCardComponent } from './credit-card/credit-card.component';
+import { FormsModule } from '@angular/forms';
+import { PipesModule } from '../pipes/pipes.module';
 
 
 
@@ -18,11 +21,13 @@ import { LoaderComponent } from './loader/loader.component';
     ProgressBarComponent,
     StarRatingComponent,
     ComponentDocsComponent,
-    LoaderComponent
+    LoaderComponent,
+    CreditCardComponent,
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(COMPONENT_ROUTES)
+    RouterModule.forChild(COMPONENT_ROUTES),
+    FormsModule,
   ],
   exports: [
     CardComponent,
