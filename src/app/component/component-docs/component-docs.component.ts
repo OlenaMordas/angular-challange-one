@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AccrodionItem } from 'src/app/accordion-item.interface';
+import { LoaderType } from '../loader/loader-type.enum';
 
 
 @Component({
@@ -18,6 +19,6 @@ export class ComponentDocsComponent implements OnInit {
     this.accordionItems.push({title:'Example 2', content: 'Content 2', isExpanded: false});
     
   }
-
+  public loaderType = LoaderType.Loading;
   
 }
