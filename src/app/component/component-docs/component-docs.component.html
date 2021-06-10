@@ -19,7 +19,7 @@
     subTitle = "Component"
     rating=3.5>
 </star-rating>
-<app-loader [isLoading] = true [loaderType] = "loaderType"></app-loader>
+<app-loader [isLoading] = false [loaderType] = "loaderType"></app-loader>
 
 <card title="Credit Card" subTitle="Component" iconClasses = "fas fa-info-circle">
     <div class="body">
@@ -27,5 +27,10 @@
         <br>
         <credit-card [creditCardNumber]="'432143214321'" [isReadonly] = "true"></credit-card>
     </div>
-    <div class="footer">Footer Content</div>
+</card>
+
+<card title="Twitter Post" subTitle="Component" iconClasses = "fas fa-info-circle">
+    <div class="body">
+        <twitter-post></twitter-post>
+    </div>
 </card>
