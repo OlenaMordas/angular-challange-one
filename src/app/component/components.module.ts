@@ -12,6 +12,7 @@ import { CreditCardComponent } from './credit-card/credit-card.component';
 import { FormsModule } from '@angular/forms';
 import { PipesModule } from '../pipes/pipes.module';
 import { TwitterPostComponent } from './twitter-post/twitter-post.component';
+import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
 
 
 
@@ -25,6 +26,7 @@ import { TwitterPostComponent } from './twitter-post/twitter-post.component';
     LoaderComponent,
     CreditCardComponent,
     TwitterPostComponent,
+    LinkedinPostComponent,
   ],
   imports: [
     CommonModule,
