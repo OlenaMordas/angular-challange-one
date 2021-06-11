@@ -14,3 +14,15 @@
     <p>{{'a111222233334444' | creditCardFormatter}}</p>
   </div>
 </card>
+
+<card [iconClasses]="'fas fa-info-circle'" [title]="'Flatten'" [subTitle]="'Pipes'">
+  <div class="body">
+    <p>{{flattenValue | flatten }}</p>
+  </div>
+  <div class="footer">
+    <button (click) = modifyFlattenValue()>Modify</button>
+    <br>
+    <button (click) = reassignFlattenValue()>Reassign</button>
+  </div>
+
+</card>

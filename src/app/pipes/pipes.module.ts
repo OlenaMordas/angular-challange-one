@@ -6,11 +6,12 @@ import { PipeDocsComponent } from './pipe-docs/pipe-docs.component';
 import { PIPES_ROUTES } from './pipes.routes';
 import { TruncatePipe } from './truncate/truncate.pipe';
 import { CreditCardFormatterPipe } from './credit-card-formatter/credit-card-formatter.pipe';
+import { FlattenPipe } from './flatten/flatten.pipe';
 
 
 
 @NgModule({
-  declarations: [PipeDocsComponent, TruncatePipe, CreditCardFormatterPipe],
+  declarations: [PipeDocsComponent, TruncatePipe, CreditCardFormatterPipe, FlattenPipe],
   imports: [
     CommonModule,
     ComponentsModule,
