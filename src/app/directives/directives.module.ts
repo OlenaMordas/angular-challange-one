@@ -3,13 +3,16 @@ import { CommonModule } from '@angular/common';
 import { DIRECTIVES_ROUTES } from './directive-docs/directives.routes';
 import { DirectiveDocsComponent } from './directive-docs/directive-docs.component';
 import { RouterModule } from '@angular/router';
+import { DebounceDirective } from './debounce/debounce.directive';
+import { ComponentsModule } from '../component/components.module';
 
 
 
 @NgModule({
-  declarations: [DirectiveDocsComponent],
+  declarations: [DirectiveDocsComponent, DebounceDirective],
   imports: [
     CommonModule,
+    ComponentsModule,
     RouterModule.forChild(DIRECTIVES_ROUTES)
   ]
 })

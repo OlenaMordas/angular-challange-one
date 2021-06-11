@@ -12,4 +12,7 @@ export class DirectiveDocsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  log(){
+    console.log('Clicked');
+  }
 }
