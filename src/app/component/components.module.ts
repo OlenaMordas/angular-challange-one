@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { PipesModule } from '../pipes/pipes.module';
 import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
+import { QuoteComponent } from './quote/quote.component';
 
 
 
@@ -27,6 +28,7 @@ import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
     CreditCardComponent,
     TwitterPostComponent,
     LinkedinPostComponent,
+    QuoteComponent,
   ],
   imports: [
     CommonModule,
