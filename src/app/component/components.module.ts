@@ -15,6 +15,7 @@ import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
 import { QuoteComponent } from './quote/quote.component';
 import { ToggleComponent } from './toggle/toggle.component';
+import { RichTextViewerComponent } from './rich-text-viewer/rich-text-viewer.component';
 
 
 
@@ -31,6 +32,7 @@ import { ToggleComponent } from './toggle/toggle.component';
     LinkedinPostComponent,
     QuoteComponent,
     ToggleComponent,
+    RichTextViewerComponent,
   ],
   imports: [
     CommonModule,

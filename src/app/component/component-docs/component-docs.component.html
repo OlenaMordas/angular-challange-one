@@ -21,6 +21,19 @@
 </star-rating>
 <app-loader [isLoading] = false [loaderType] = "loaderType"></app-loader>
 
+<card title="Rich Text View" subTitle="Component" iconClasses = "fas fa-info-circle">
+    <div class="body">
+        <h3>Good Example</h3>
+        <rich-text-viewer [htmlText]="'<p>Hello World</p>'" ></rich-text-viewer>
+
+        <h3>Empty Example</h3>
+        <rich-text-viewer [htmlText]="'        '" ></rich-text-viewer>
+
+        <h3>Bad HTML Example</h3>
+        <rich-text-viewer [htmlText]="'<p> Hello World'" ></rich-text-viewer>
+    </div>
+</card>
+
 <card title="Credit Card" subTitle="Component" iconClasses = "fas fa-info-circle">
     <div class="body">
         <credit-card [creditCardNumber]="'432143214321'" [isReadonly] = "false"></credit-card>
