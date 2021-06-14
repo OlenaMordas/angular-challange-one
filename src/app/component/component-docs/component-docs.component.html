@@ -21,6 +21,12 @@
 </star-rating>
 <app-loader [isLoading] = false [loaderType] = "loaderType"></app-loader>
 
+<card title="Debounce search" subTitle="Component" iconClasses = "fas fa-info-circle">
+    <div class="body">
+        <debounce-search (searchUpdate)="debounceSearch($event)"></debounce-search>
+    </div>
+</card>
+
 <card title="Rich Text View" subTitle="Component" iconClasses = "fas fa-info-circle">
     <div class="body">
         <h3>Good Example</h3>

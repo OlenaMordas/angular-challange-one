@@ -16,6 +16,7 @@ import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
 import { QuoteComponent } from './quote/quote.component';
 import { ToggleComponent } from './toggle/toggle.component';
 import { RichTextViewerComponent } from './rich-text-viewer/rich-text-viewer.component';
+import { DebounceSearchComponent } from './debounce-search/debounce-search.component';
 
 
 
@@ -33,6 +34,7 @@ import { RichTextViewerComponent } from './rich-text-viewer/rich-text-viewer.com
     QuoteComponent,
     ToggleComponent,
     RichTextViewerComponent,
+    DebounceSearchComponent,
   ],
   imports: [
     CommonModule,

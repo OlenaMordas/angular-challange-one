@@ -20,5 +20,9 @@ export class ComponentDocsComponent implements OnInit {
     
   }
   public loaderType = LoaderType.Loading;
+
+  debounceSearch(value){
+    console.log(value);
+  }
   
 }
