@@ -14,6 +14,7 @@ import { PipesModule } from '../pipes/pipes.module';
 import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
 import { QuoteComponent } from './quote/quote.component';
+import { ToggleComponent } from './toggle/toggle.component';
 
 
 
@@ -29,6 +30,7 @@ import { QuoteComponent } from './quote/quote.component';
     TwitterPostComponent,
     LinkedinPostComponent,
     QuoteComponent,
+    ToggleComponent,
   ],
   imports: [
     CommonModule,
