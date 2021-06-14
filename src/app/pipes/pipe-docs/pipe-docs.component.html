@@ -7,6 +7,12 @@
   </p>
 </card>
 
+<card [iconClasses]="'fas fa-info-circle'" [title]="'Filter'" [subTitle]="'Pipe'">
+  <p class="body">
+    {{['Hello', 'World', 'Hello World'] | filterArray: 'Hello'}}
+  </p>
+</card>
+
 <card [iconClasses]="'fas fa-info-circle'" [title]="'Truncate'" [subTitle]="'Pipes'">
   <div class="body">
     <p>{{'1111222233334444' | creditCardFormatter}}</p>
