@@ -20,6 +20,7 @@ import { DebounceSearchComponent } from './debounce-search/debounce-search.compo
 import { SearchListComponent } from './search-list/search-list.component';
 import { SharedModule } from '../shared/shared.module';
 import { CounterComponent } from './counter/counter.component';
+import { TableComponent } from './table/table.component';
 
 
 
@@ -39,6 +40,7 @@ import { CounterComponent } from './counter/counter.component';
     DebounceSearchComponent,
     SearchListComponent,
     CounterComponent,
+    TableComponent,
   ],
   imports: [
     CommonModule,
