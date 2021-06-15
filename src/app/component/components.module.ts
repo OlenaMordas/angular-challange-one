@@ -19,6 +19,7 @@ import { RichTextViewerComponent } from './rich-text-viewer/rich-text-viewer.com
 import { DebounceSearchComponent } from './debounce-search/debounce-search.component';
 import { SearchListComponent } from './search-list/search-list.component';
 import { SharedModule } from '../shared/shared.module';
+import { CounterComponent } from './counter/counter.component';
 
 
 
@@ -37,6 +38,7 @@ import { SharedModule } from '../shared/shared.module';
     RichTextViewerComponent,
     DebounceSearchComponent,
     SearchListComponent,
+    CounterComponent,
   ],
   imports: [
     CommonModule,
