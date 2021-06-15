@@ -1,0 +1,11 @@
+<debounce-search [searchString]="searchString" (searchUpdate)="onSearchUpdate($event)"></debounce-search>
+<ul *ngIf="searchString && !hasBeenSelected">
+    <div class="items-container">
+        <li *ngFor=" let item of availableItems | filterArray: searchString"
+        (click)="selectTerm(item)">
+            {{item}}
+        </li>
+    </div>
+   
+</ul>
+

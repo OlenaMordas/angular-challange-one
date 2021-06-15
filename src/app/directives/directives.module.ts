@@ -5,6 +5,7 @@ import { DirectiveDocsComponent } from './directive-docs/directive-docs.componen
 import { RouterModule } from '@angular/router';
 import { DebounceDirective } from './debounce/debounce.directive';
 import { ComponentsModule } from '../component/components.module';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -12,7 +13,7 @@ import { ComponentsModule } from '../component/components.module';
   declarations: [DirectiveDocsComponent, DebounceDirective],
   imports: [
     CommonModule,
-    ComponentsModule,
+    SharedModule,
     RouterModule.forChild(DIRECTIVES_ROUTES)
   ]
 })

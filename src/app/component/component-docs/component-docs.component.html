@@ -21,6 +21,12 @@
 </star-rating>
 <app-loader [isLoading] = false [loaderType] = "loaderType"></app-loader>
 
+<card title="Search list" subTitle="Component" iconClasses = "fas fa-info-circle">
+    <div class="body">
+        <search-list [availableItems]="['United States', 'United Arab Emirates', 'Mexico']"></search-list>
+    </div>
+</card>
+
 <card title="Debounce search" subTitle="Component" iconClasses = "fas fa-info-circle">
     <div class="body">
         <debounce-search (searchUpdate)="debounceSearch($event)"></debounce-search>

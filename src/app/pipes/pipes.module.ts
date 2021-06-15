@@ -8,14 +8,15 @@ import { TruncatePipe } from './truncate/truncate.pipe';
 import { CreditCardFormatterPipe } from './credit-card-formatter/credit-card-formatter.pipe';
 import { FlattenPipe } from './flatten/flatten.pipe';
 import { FilterArrayPipe } from './filter-array.pipe';
+import { SharedModule } from '../shared/shared.module';
 
 
 
 @NgModule({
-  declarations: [PipeDocsComponent, TruncatePipe, CreditCardFormatterPipe, FlattenPipe, FilterArrayPipe],
+  declarations: [PipeDocsComponent, TruncatePipe, CreditCardFormatterPipe, FlattenPipe],
   imports: [
     CommonModule,
-    ComponentsModule,
+    SharedModule,
     RouterModule.forChild(PIPES_ROUTES),
   ],
   exports: [
