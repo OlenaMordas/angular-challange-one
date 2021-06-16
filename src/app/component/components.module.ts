@@ -22,6 +22,7 @@ import { SharedModule } from '../shared/shared.module';
 import { CounterComponent } from './counter/counter.component';
 import { TableComponent } from './table/table.component';
 import { PagingComponent } from './paging/paging.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 
 
@@ -43,6 +44,7 @@ import { PagingComponent } from './paging/paging.component';
     CounterComponent,
     TableComponent,
     PagingComponent,
+    TabsComponent,
   ],
   imports: [
     CommonModule,

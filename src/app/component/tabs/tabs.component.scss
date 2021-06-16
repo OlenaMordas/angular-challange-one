@@ -1,0 +1,17 @@
+@import './../../../styles';
+
+.tabs-container{
+    .tabs-heading{
+        div{
+            cursor: pointer;
+            display: inline;
+            margin: 5px;
+            &.active{
+                border-bottom: 2px solid $blue;
+            }
+        }    
+    }
+    .tabs-content{
+        margin: 5px;
+    }
+}

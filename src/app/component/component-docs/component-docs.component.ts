@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AccrodionItem } from 'src/app/accordion-item.interface';
 import { LoaderType } from '../loader/loader-type.enum';
+import { Tab } from '../tabs/tab.interface';
 
 
 @Component({
@@ -24,5 +25,11 @@ export class ComponentDocsComponent implements OnInit {
   debounceSearch(value){
     console.log(value);
   }
-  
+
+  public tabsArray:Tab[] = [
+    {'title': 'Tab 1', 'isActive': true},
+    {'title': 'Tab 2', 'isActive': false}
+  ]
+  selectedTab=0;
+
 }
