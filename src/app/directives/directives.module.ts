@@ -6,11 +6,12 @@ import { RouterModule } from '@angular/router';
 import { DebounceDirective } from './debounce/debounce.directive';
 import { ComponentsModule } from '../component/components.module';
 import { SharedModule } from '../shared/shared.module';
+import { RippleDirective } from './ripple/ripple.directive';
 
 
 
 @NgModule({
-  declarations: [DirectiveDocsComponent, DebounceDirective],
+  declarations: [DirectiveDocsComponent, DebounceDirective, RippleDirective],
   imports: [
     CommonModule,
     SharedModule,
