@@ -21,6 +21,7 @@ import { SearchListComponent } from './search-list/search-list.component';
 import { SharedModule } from '../shared/shared.module';
 import { CounterComponent } from './counter/counter.component';
 import { TableComponent } from './table/table.component';
+import { PagingComponent } from './paging/paging.component';
 
 
 
@@ -41,6 +42,7 @@ import { TableComponent } from './table/table.component';
     SearchListComponent,
     CounterComponent,
     TableComponent,
+    PagingComponent,
   ],
   imports: [
     CommonModule,

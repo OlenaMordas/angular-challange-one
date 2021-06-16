@@ -1,0 +1,18 @@
+<div class="paging-container">
+    <button class="prev" [disabled]="isPrevDisabled" (click)="setPage(currentPage-1)">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+    <div class="pages">
+        <button 
+            *ngFor="let page of pages" class="page" 
+            [class.active]="page==currentPage"
+            (click)="setPage(page)">
+                {{page}}
+        </button>
+    </div>
+    <button class="next" [disabled]="isNextDisabled" (click)="setPage(currentPage+1)">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+</div>
+
+

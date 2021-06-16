@@ -21,9 +21,15 @@
 </star-rating>
 <app-loader [isLoading] = false [loaderType] = "loaderType"></app-loader>
 
-<card title="Search list" subTitle="Component" iconClasses = "fas fa-info-circle">
+<card title="Counter" subTitle="Component" iconClasses = "fas fa-info-circle">
     <div class="body">
         <counter></counter>
+    </div>
+</card>
+
+<card title="Paging " subTitle="Component" iconClasses = "fas fa-info-circle">
+    <div class="body">
+        <paging [totalNumberOfItems]="70" [itemsPerPage]="10"></paging>
     </div>
 </card>
 
