@@ -3,9 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { APP_ROUTES } from 'src/app.routes';
 import { AppComponent } from './app.component';
-import { ComponentDocsComponent } from './component/component-docs/component-docs.component';
 import { PageTopComponent } from './component/page-top/page-top.component';
 import { ToolbarComponent } from './component/toolbar/toolbar.component';
+import { MiscDocsComponent } from './misc/misc-docs/misc-docs.component';
 
 
 @NgModule({
@@ -13,6 +13,7 @@ import { ToolbarComponent } from './component/toolbar/toolbar.component';
     AppComponent,
     ToolbarComponent,
     PageTopComponent,
+    MiscDocsComponent,
   ],
   imports: [
     BrowserModule,
