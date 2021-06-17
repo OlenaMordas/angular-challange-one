@@ -1,0 +1,47 @@
+<div class="email-form-container">
+    <div class="form-container">
+        <h2> Get In Touch</h2>
+        <form class="email-form" [formGroup]="form" (ngSubmit)="onSubmit(form)">
+            <div>
+            <div class="name" [class.error]="name.touched&&name.invalid" > 
+                <input formControlName="name"
+                    id="name"
+                    type="text"
+                    placeholder="Your Name"
+                    class="form-control">
+                <i class="fas fa-user"></i>
+                </div>
+                <ng-container *ngIf="name.touched&&name.invalid">
+                    <small class="error" *ngIf="name.invalid && !name.errors?.minlength" >Name is required</small>
+                    <small class="error" *ngIf="name.errors?.minlength">
+                        Name must be at least 3 characters long.
+                      </small>
+                </ng-container>
+                </div>
+            <div>
+            <div class="email" [class.error]="email.touched&&email.invalid">
+                <input formControlName="email"
+                    id="email"
+                    type="email"
+                    placeholder="Your Email"
+                    class="form-control">
+                <i class="fas fa-envelope"></i>
+            </div>
+                <div class="error" *ngIf="email.touched&&email.invalid">Email is invalid.</div>
+            </div>
+            <div class="message">
+                <textarea formControlName="message"
+                    id="message"
+                    type="text"
+                    placeholder="Your Message"
+                    class="form-control">
+                </textarea>
+                <i class="fas fa-comment"></i>
+            </div>
+            <button type="submit" [disabled]="form.invalid" >Submit</button>
+        </form>
+    </div>
+</div>
+
+
+

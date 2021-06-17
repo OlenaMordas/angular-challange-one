@@ -9,7 +9,7 @@ import { COMPONENT_ROUTES } from './component.routes';
 import { RouterModule } from '@angular/router';
 import { LoaderComponent } from './loader/loader.component';
 import { CreditCardComponent } from './credit-card/credit-card.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PipesModule } from '../pipes/pipes.module';
 import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
@@ -24,6 +24,7 @@ import { TableComponent } from './table/table.component';
 import { PagingComponent } from './paging/paging.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { SortTableComponent } from './sort-table/sort-table.component';
+import { EmailFormComponent } from './email-form/email-form.component';
 
 
 
@@ -47,10 +48,12 @@ import { SortTableComponent } from './sort-table/sort-table.component';
     PagingComponent,
     TabsComponent,
     SortTableComponent,
+    EmailFormComponent,
   ],
   imports: [
     CommonModule,
     SharedModule,
+    ReactiveFormsModule,
     RouterModule.forChild(COMPONENT_ROUTES),
     FormsModule,
   ],
