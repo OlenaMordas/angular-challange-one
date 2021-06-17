@@ -9,3 +9,17 @@
         <button (click)="isInDOM=!isInDOM">Toggle Animation</button>
     </div>
 </card>
+
+<card [iconClasses]="'fas fa-info-circle'" [title]="'Dirty From Guard'" [subTitle]="'Other - Guard'">
+    <div class="body">
+        <form class="email-form" [formGroup]="form" (ngSubmit)="submit()">
+            <div>
+              <div class="name">
+                <input type="text" placeholder="Your Name" formControlName="name">
+              </div>
+            </div>
+      
+            <button>Submit</button>
+          </form>
+    </div>
+</card>

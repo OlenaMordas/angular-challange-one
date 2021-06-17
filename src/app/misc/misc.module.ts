@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { MISC_ROUTES } from './misc.routes';
 import { SharedModule } from '../shared/shared.module';
 import { MiscDocsComponent } from './misc-docs/misc-docs.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,6 +12,7 @@ import { MiscDocsComponent } from './misc-docs/misc-docs.component';
   imports: [
     CommonModule,
     SharedModule,
+    ReactiveFormsModule,
     RouterModule.forChild(MISC_ROUTES)
   ]
 })
