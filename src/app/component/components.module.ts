@@ -23,6 +23,7 @@ import { CounterComponent } from './counter/counter.component';
 import { TableComponent } from './table/table.component';
 import { PagingComponent } from './paging/paging.component';
 import { TabsComponent } from './tabs/tabs.component';
+import { SortTableComponent } from './sort-table/sort-table.component';
 
 
 
@@ -45,6 +46,7 @@ import { TabsComponent } from './tabs/tabs.component';
     TableComponent,
     PagingComponent,
     TabsComponent,
+    SortTableComponent,
   ],
   imports: [
     CommonModule,

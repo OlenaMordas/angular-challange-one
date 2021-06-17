@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-table',
@@ -7,6 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TableComponent{
 
+  @Output() headerClick = new EventEmitter<string>();
+  
   @Input() public tableData: any[] = [
     { first: 'Dylan 1', last: 'Israel', dob: '10/25/87' },
     { first: 'Dylan 2', last: 'Israel', dob: '10/25/87' },
@@ -14,4 +16,7 @@ export class TableComponent{
     { first: 'Dylan 4', last: 'Israel', dob: '10/25/87' },
   ];
 
+  onHeaderClick(header){
+    this.headerClick.emit(header);
+  }
 }
