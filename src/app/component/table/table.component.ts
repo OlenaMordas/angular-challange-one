@@ -7,7 +7,7 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class TableComponent{
 
-  @Output() headerClick = new EventEmitter<string>();
+  @Output() headerClick = new EventEmitter<{key: string, value: any }>();
   
   @Input() public tableData: any[] = [
     { first: 'Dylan 1', last: 'Israel', dob: '10/25/87' },
@@ -16,7 +16,7 @@ export class TableComponent{
     { first: 'Dylan 4', last: 'Israel', dob: '10/25/87' },
   ];
 
-  onHeaderClick(header){
-    this.headerClick.emit(header);
+  onHeaderClick(key: string, value: any){
+    this.headerClick.emit({key, value});
   }
 }
