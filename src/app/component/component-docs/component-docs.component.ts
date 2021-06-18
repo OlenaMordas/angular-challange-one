@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AccrodionItem } from 'src/app/accordion-item.interface';
 import { LoaderType } from '../loader/loader-type.enum';
+import { RibbonLocation } from '../ribbon/ribbon-location.enum';
+import { RibbonType } from '../ribbon/ribbon-type.enum';
 import { Tab } from '../tabs/tab.interface';
 
 
@@ -12,6 +14,10 @@ import { Tab } from '../tabs/tab.interface';
 export class ComponentDocsComponent implements OnInit {
 
   public accordionItems: AccrodionItem[]=[];
+
+  public RibbonType = RibbonType;
+  public RibbonLocation = RibbonLocation;
+  public ribbonStyle = {type: RibbonType.Info, location: RibbonLocation.TopLeft}
 
   constructor() { }
 

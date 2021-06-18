@@ -30,6 +30,20 @@
     </div>
 </card>
 
+<card title="Ribbon" subTitle="Controller" iconClasses = "fas fa-info-circle">
+    <div class="body">
+        <ribbon [location]="ribbonStyle.location" [type]="ribbonStyle.type" [label]= "'Shitty ribbon'"></ribbon>
+        <button (click)="ribbonStyle.location = RibbonLocation.TopRight">Top-Right</button>
+        <button (click)="ribbonStyle.location = RibbonLocation.TopLeft">Top-Left</button>
+        <button (click)="ribbonStyle.location = RibbonLocation.BottomRight">Bottom-Right</button>
+        <button (click)="ribbonStyle.location = RibbonLocation.BottomLeft">Bottom-Left</button>
+        <button (click)="ribbonStyle.type = RibbonType.Info">Info</button>
+        <button (click)="ribbonStyle.type = RibbonType.Error">Error</button>
+        <button (click)="ribbonStyle.type = RibbonType.Success">Success</button>
+        <button (click)="ribbonStyle.type = RibbonType.Warning">Warning</button>
+    </div>
+</card>
+
 <card title="Sort Table" subTitle="Component" iconClasses = "fas fa-info-circle">
     <div class="body">
         <sort-table></sort-table>
@@ -84,6 +98,7 @@
         <rich-text-viewer [htmlText]="'<p> Hello World'" ></rich-text-viewer>
     </div>
 </card>
+
 
 <card title="Credit Card" subTitle="Component" iconClasses = "fas fa-info-circle">
     <div class="body">
