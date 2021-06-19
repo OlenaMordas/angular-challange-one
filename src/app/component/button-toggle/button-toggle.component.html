@@ -1,0 +1,5 @@
+<div class="toggle-container">
+    <button *ngFor="let btn of buttonList" 
+    [class.active] = "btn===activeButton"
+    (click)="onClick(btn)">{{btn}}</button>
+</div>

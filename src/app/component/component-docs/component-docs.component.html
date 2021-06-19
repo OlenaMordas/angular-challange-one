@@ -30,6 +30,12 @@
     </div>
 </card>
 
+<card title="Button Toggle" subTitle="Component" iconClasses = "fas fa-info-circle">
+    <div class="body">
+        <button-toggle [buttonList]="toggleButtons" (buttonClickEvent)="onToggleButtonClick($event)" ></button-toggle>
+    </div>
+</card>
+
 <card title="Ribbon" subTitle="Controller" iconClasses = "fas fa-info-circle">
     <div class="body">
         <ribbon [location]="ribbonStyle.location" [type]="ribbonStyle.type" [label]= "'Shitty ribbon'"></ribbon>

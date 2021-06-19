@@ -19,6 +19,8 @@ export class ComponentDocsComponent implements OnInit {
   public RibbonLocation = RibbonLocation;
   public ribbonStyle = {type: RibbonType.Info, location: RibbonLocation.TopLeft}
 
+  public toggleButtons = ['bold', 'italic', 'underline'];
+
   constructor() { }
 
   ngOnInit(): void {
@@ -38,4 +40,7 @@ export class ComponentDocsComponent implements OnInit {
   ]
   selectedTab=0;
 
+  onToggleButtonClick(button){
+    console.log(`Clicked ${button}`);
+  }
 }

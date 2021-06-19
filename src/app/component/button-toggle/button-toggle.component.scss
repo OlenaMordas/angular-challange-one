@@ -1,0 +1,39 @@
+@import '../../../styles';
+
+.toggle-container{
+
+    display: flex;
+
+    button{
+        height: 30px;
+        padding: 5px;
+        background-color: $white;
+        border: 1px solid $blue;
+        cursor:pointer;
+        transition: all 0.3;
+
+        &:first-child{
+            border-right: none;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        &:last-child{
+            border-left: none;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        &:only-child{
+            border: 1px solid $blue;
+        }
+
+        &:hover{
+            color: $white;
+            background-color: #006bb3;
+        }
+        &.active{
+            background-color: $blue;
+        }
+    }   
+}
