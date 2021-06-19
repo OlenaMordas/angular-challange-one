@@ -1,5 +1,12 @@
 <card title="Button Toggle" subTitle="Component" iconClasses = "fas fa-info-circle">
     <div class="body">
+        <snack-bar [message]="'Snackbar Example'" #snackbar></snack-bar>
+        <button (click)="snackbar.show()">Show Snackbar</button>
+    </div>
+</card>
+
+<card title="Button Toggle" subTitle="Component" iconClasses = "fas fa-info-circle">
+    <div class="body">
         <banner-cut-out></banner-cut-out>
     </div>
 </card>
