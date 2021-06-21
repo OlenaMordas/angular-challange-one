@@ -29,6 +29,7 @@ import { RibbonComponent } from './ribbon/ribbon.component';
 import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
 import { BannerCutOutComponent } from './banner-cut-out/banner-cut-out.component';
 import { SnackBarComponent } from './snack-bar/snack-bar.component';
+import { PopupComponent } from './popup/popup.component';
 
 
 
@@ -56,7 +57,8 @@ import { SnackBarComponent } from './snack-bar/snack-bar.component';
     RibbonComponent,
     ButtonToggleComponent,
     BannerCutOutComponent,
-    SnackBarComponent
+    SnackBarComponent,
+    PopupComponent
   ],
   imports: [
     CommonModule,
