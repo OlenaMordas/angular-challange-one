@@ -58,7 +58,6 @@ import { CountDownComponent } from './count-down/count-down.component';
     RibbonComponent,
     ButtonToggleComponent,
     BannerCutOutComponent,
-    SnackBarComponent,
     PopupComponent,
     CountDownComponent
   ],
@@ -71,6 +70,7 @@ import { CountDownComponent } from './count-down/count-down.component';
   ],
   exports: [
     CardComponent,
+    SnackBarComponent,
     SearchListComponent,
     ComponentDocsComponent,
   ]

@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { AccrodionItem } from 'src/app/accordion-item.interface';
 import { LoaderType } from '../loader/loader-type.enum';
 import { RibbonLocation } from '../ribbon/ribbon-location.enum';
 import { RibbonType } from '../ribbon/ribbon-type.enum';
+import { SnackBarComponent } from '../snack-bar/snack-bar.component';
 import { Tab } from '../tabs/tab.interface';
 
 
@@ -20,6 +21,9 @@ export class ComponentDocsComponent implements OnInit {
   public ribbonStyle = {type: RibbonType.Info, location: RibbonLocation.TopLeft}
 
   public toggleButtons = ['bold', 'italic', 'underline'];
+
+
+  @ViewChild(SnackBarComponent) public snackBar: SnackBarComponent;
 
   constructor() { }
 
@@ -42,5 +46,9 @@ export class ComponentDocsComponent implements OnInit {
 
   onToggleButtonClick(button){
     console.log(`Clicked ${button}`);
+  }
+
+  public snackBarShow():void{
+    this.snackBar.showMessage('Snackbar Example');
   }
 }

@@ -1,4 +1,11 @@
-<card [iconClasses]="'fas fa-info-circle'" [title]="'Fade In Out'" [subTitle]="'Other - Animation'">
+<card [iconClasses]="'fas fa-info-circle'" [title]="'Snackbar'" [subTitle]="'Service'">
+    <div class="body">
+        <button (click)="callSnackbar()">Call Snackbar</button>
+        <snack-bar></snack-bar>
+    </div>
+</card>
+
+<card [iconClasses]="'fas fa-info-circle'" [title]="'User'" [subTitle]="'Service'">
     <div class="body">
         <div>{{user |json}}</div>
     </div>
