@@ -31,6 +31,7 @@ import { BannerCutOutComponent } from './banner-cut-out/banner-cut-out.component
 import { SnackBarComponent } from './snack-bar/snack-bar.component';
 import { PopupComponent } from './popup/popup.component';
 import { CountDownComponent } from './count-down/count-down.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -59,7 +60,8 @@ import { CountDownComponent } from './count-down/count-down.component';
     ButtonToggleComponent,
     BannerCutOutComponent,
     PopupComponent,
-    CountDownComponent
+    CountDownComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
