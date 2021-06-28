@@ -33,6 +33,7 @@ import { PopupComponent } from './popup/popup.component';
 import { CountDownComponent } from './count-down/count-down.component';
 import { FooterComponent } from './footer/footer.component';
 import { SkeletonLoaderComponent } from './skeleton-loader/skeleton-loader.component';
+import { SocialMediaBarComponent } from './social-media-bar/social-media-bar.component';
 
 
 
@@ -62,7 +63,8 @@ import { SkeletonLoaderComponent } from './skeleton-loader/skeleton-loader.compo
     PopupComponent,
     CountDownComponent,
     FooterComponent,
-    SkeletonLoaderComponent
+    SkeletonLoaderComponent,
+    SocialMediaBarComponent
   ],
   imports: [
     CommonModule,

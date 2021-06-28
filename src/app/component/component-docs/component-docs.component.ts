@@ -4,6 +4,8 @@ import { LoaderType } from '../loader/loader-type.enum';
 import { RibbonLocation } from '../ribbon/ribbon-location.enum';
 import { RibbonType } from '../ribbon/ribbon-type.enum';
 import { SnackBarComponent } from '../snack-bar/snack-bar.component';
+import { SocialMediaIcon } from '../social-media-bar/social-media-icon.interface';
+import { SocialMedia } from '../social-media-bar/socila-media.enum';
 import { Tab } from '../tabs/tab.interface';
 
 
@@ -52,4 +54,12 @@ export class ComponentDocsComponent implements OnInit {
   public snackBarShow():void{
     this.snackBar.showMessage('Snackbar Example');
   }
+
+  public socialMedia: SocialMediaIcon[] = [
+    { href: 'https://www.facebook.com/groups/190277791450732', type: SocialMedia.Facebook },
+    { href: 'https://www.instagram.com/dylansphotos87/', type: SocialMedia.Instagram },
+    { href: 'https://www.linkedin.com/in/dylan310/', type: SocialMedia.LinkedIn },
+    { href: 'https://twitter.com/PizzaPokerGuy', type: SocialMedia.Twitter },
+    { href: 'https://www.YouTube.com/CodingTutorials360', type: SocialMedia.YouTube },
+  ];
 }

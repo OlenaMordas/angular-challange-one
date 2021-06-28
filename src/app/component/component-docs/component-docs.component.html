@@ -58,6 +58,8 @@
     </div>
 </card>
 
+<social-media-bar [socialMedia]="socialMedia"></social-media-bar>
+
 <card title="Button Toggle" subTitle="Component" iconClasses = "fas fa-info-circle">
     <div class="body">
         <button-toggle [buttonList]="toggleButtons" (buttonClickEvent)="onToggleButtonClick($event)" ></button-toggle>
