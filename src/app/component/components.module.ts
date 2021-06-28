@@ -34,6 +34,7 @@ import { CountDownComponent } from './count-down/count-down.component';
 import { FooterComponent } from './footer/footer.component';
 import { SkeletonLoaderComponent } from './skeleton-loader/skeleton-loader.component';
 import { SocialMediaBarComponent } from './social-media-bar/social-media-bar.component';
+import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
 
 
 
@@ -64,7 +65,8 @@ import { SocialMediaBarComponent } from './social-media-bar/social-media-bar.com
     CountDownComponent,
     FooterComponent,
     SkeletonLoaderComponent,
-    SocialMediaBarComponent
+    SocialMediaBarComponent,
+    BottomSheetComponent
   ],
   imports: [
     CommonModule,

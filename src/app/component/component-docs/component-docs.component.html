@@ -58,6 +58,17 @@
     </div>
 </card>
 
+<card title="Bottom Sheet" subTitle="Component" iconClasses = "fas fa-info-circle">
+    <div class="body">
+        <bottom-sheet #bottomSheet>
+            <h1 (click)="bottomSheet.hide()">Hello</h1>
+        </bottom-sheet>
+    </div>
+    <div class="footer">
+       <button (click)="bottomSheet.show()">Show</button>
+    </div>
+</card>
+
 <social-media-bar [socialMedia]="socialMedia"></social-media-bar>
 
 <card title="Button Toggle" subTitle="Component" iconClasses = "fas fa-info-circle">
