@@ -53,7 +53,6 @@ import { FooterComponent } from './footer/footer.component';
     CounterComponent,
     TableComponent,
     PagingComponent,
-    TabsComponent,
     SortTableComponent,
     EmailFormComponent,
     RibbonComponent,
@@ -72,6 +71,7 @@ import { FooterComponent } from './footer/footer.component';
   ],
   exports: [
     CardComponent,
+    TabsComponent,
     SnackBarComponent,
     SearchListComponent,
     ComponentDocsComponent,

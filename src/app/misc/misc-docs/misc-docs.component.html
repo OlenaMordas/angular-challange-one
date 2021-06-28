@@ -23,3 +23,11 @@
           </form>
     </div>
 </card>
+
+<card title="Tabs" subTitle="Component" iconClasses = "fas fa-info-circle">
+  <div class="body">
+      <tabs [tabs]="tabsArray" (selectedTabIndex)="selectedTab = $event">
+          <h1 @slideRightAnimation *ngIf="selectedTab==0"  class="tab-content"> Tab 1 Content</h1>
+          <h1 @slideRightAnimation  *ngIf="selectedTab==1"  class="tab-content"> Tab 2 Content</h1>
+      </tabs>
+  </div>
