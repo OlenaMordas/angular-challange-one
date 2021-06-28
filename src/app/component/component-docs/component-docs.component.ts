@@ -34,6 +34,7 @@ export class ComponentDocsComponent implements OnInit {
   }
   public loaderType = LoaderType.Loading;
 
+  loaded=false;
   debounceSearch(value){
     console.log(value);
   }

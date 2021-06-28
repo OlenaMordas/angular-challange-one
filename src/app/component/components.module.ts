@@ -32,6 +32,7 @@ import { SnackBarComponent } from './snack-bar/snack-bar.component';
 import { PopupComponent } from './popup/popup.component';
 import { CountDownComponent } from './count-down/count-down.component';
 import { FooterComponent } from './footer/footer.component';
+import { SkeletonLoaderComponent } from './skeleton-loader/skeleton-loader.component';
 
 
 
@@ -60,7 +61,8 @@ import { FooterComponent } from './footer/footer.component';
     BannerCutOutComponent,
     PopupComponent,
     CountDownComponent,
-    FooterComponent
+    FooterComponent,
+    SkeletonLoaderComponent
   ],
   imports: [
     CommonModule,
