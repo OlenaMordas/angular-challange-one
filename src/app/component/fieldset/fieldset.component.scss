@@ -1,0 +1,17 @@
+
+@import 'src/styles';
+.container{
+    padding: 5px 20px;
+    button{
+        display: flex;
+        width: 80px;
+        height: 30px;
+        text-align: center;
+        padding: 5px;
+        margin-top: -15px;
+        border-radius: 5px;
+        background-color:$tertiary-background;
+        color: white;
+        margin-left: 5px;
+    }
+}

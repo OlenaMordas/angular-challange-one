@@ -1,0 +1,7 @@
+<div class="container">
+    <button (click)="isOpen = !isOpen">
+        <i class="fas" [ngClass]="{'fa-plus':!isOpen, 'fa-minus':isOpen}"></i>
+        <p class="button-text"> {{label}} </p>
+    </button>
+    <ng-content *ngIf="isOpen"></ng-content>
+</div>
