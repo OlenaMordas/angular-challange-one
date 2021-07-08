@@ -58,6 +58,15 @@
     </div>
 </card>
 
+<card title="Pill" subTitle="Component" iconClasses = "fas fa-info-circle">
+    <div class="body">
+        <app-pill [pillType]="pillTypes.Info" [icon]="'fas fa-info'"></app-pill>
+        <app-pill [pillType]="pillTypes.Success" [icon]="'fas fa-info'"></app-pill>
+        <app-pill [pillType]="pillTypes.Warning" [icon]="'fas fa-info'"></app-pill>
+        <app-pill [pillType]="pillTypes.Error" [icon]="'fas fa-info'"></app-pill>
+    </div>
+</card>
+
 <card title="Bottom Sheet" subTitle="Component" iconClasses = "fas fa-info-circle">
     <div class="body">
         <bottom-sheet #bottomSheet>

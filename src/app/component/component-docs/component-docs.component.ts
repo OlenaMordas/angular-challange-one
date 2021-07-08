@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { AccrodionItem } from 'src/app/accordion-item.interface';
 import { LoaderType } from '../loader/loader-type.enum';
+import { PillTypes } from '../pill/pill-type.enum';
 import { RibbonLocation } from '../ribbon/ribbon-location.enum';
 import { RibbonType } from '../ribbon/ribbon-type.enum';
 import { SnackBarComponent } from '../snack-bar/snack-bar.component';
@@ -62,4 +63,6 @@ export class ComponentDocsComponent implements OnInit {
     { href: 'https://twitter.com/PizzaPokerGuy', type: SocialMedia.Twitter },
     { href: 'https://www.YouTube.com/CodingTutorials360', type: SocialMedia.YouTube },
   ];
+
+  public pillTypes = PillTypes;
 }
