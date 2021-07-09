@@ -1,13 +1,17 @@
 @import 'src/styles';
 
 .pill{
-    display: inline-flex;
-    height: 30px;
-    text-align: center;
-    padding: 5px;
-    border-radius: 5px;
+    display: inline-grid;
+    grid-auto-flow: column;
+    grid-gap: 5px;
+    align-items: center;
+    padding: 5px 15px;
+    border-radius: 16px;
     color: white;
-    padding:3px;
+    margin: 5px;
+    cursor: pointer;
+
+
     &.info{
         background-color: $blue ;
     }
@@ -18,14 +22,6 @@
         background-color: $green ;
     }
     &.warning{
-        background-color: $yellow ;
+        background-color: $orange ;
     }
-    i{
-        padding: 5px;
-    }
-    p {
-        padding-left: 5px;
-        padding-top: 5px;
-    }
-
 }
