@@ -65,4 +65,8 @@ export class ComponentDocsComponent implements OnInit {
   ];
 
   public pillTypes = PillTypes;
+
+  onPillSelection(event){
+    console.log(event);
+  }
 }

@@ -58,6 +58,12 @@
     </div>
 </card>
 
+<card title="Pill Filter" subTitle="Component" iconClasses = "fas fa-info-circle">
+    <div class="body">
+       <pill-filter [options]="['CA', 'WA', 'OR', 'TN', 'FL']" (onSelection)="onPillSelection($event)"></pill-filter>
+    </div>
+</card>
+
 <card title="Pill" subTitle="Component" iconClasses = "fas fa-info-circle">
     <div class="body">
         <app-pill [pillType]="pillTypes.Info" [icon]="'fas fa-info'"></app-pill>

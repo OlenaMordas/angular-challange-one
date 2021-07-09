@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="selected">
+        <app-pill *ngFor="let s of selected" 
+        #pill
+        [pillType]="pillTypes.Info" 
+        [label]="s" 
+        [icon] = "'far fa-times-circle'"
+        (click) = "selectClick(pill)"></app-pill>
+    </div>
+    <div class="deselected">
+        <app-pill *ngFor="let s of deselected" 
+        #pill
+        [pillType]="pillTypes.Info" 
+        [label]="s"
+        (click) = "selectClick(pill)" ></app-pill>
+    </div>
+</div>

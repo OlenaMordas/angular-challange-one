@@ -7,11 +7,14 @@ import { PillTypes } from './pill-type.enum';
   styleUrls: ['./pill.component.scss']
 })
 export class PillComponent{
-
+ 
   @Input()
-  pillType:PillTypes;
+  pillType:PillTypes = PillTypes.Info;
 
   @Input()
   icon: string;
+
+  @Input()
+  label: string|PillTypes = this.pillType;
 
 }
